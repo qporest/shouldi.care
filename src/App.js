@@ -1,19 +1,22 @@
 import React from 'react'
+
+import ColumnView from './ColumnView'
+import HoardAssistant from './HoardAssistant'
+import InfoContainer from './InfoContainer'
 import './App.css'
 import './Header.css'
 
 function App() {
   return (
     <div className="App">
-      <Header text="You should care about things" />
+      <ColumnView>
+          <InfoContainer />
+          <HoardAssistant />
+      </ColumnView>
     </div>
   );
 }
 
-function Header(props) {
-  return (
-    <h1>{props.text}</h1>
-  )
-}
+
 
 export default App;
